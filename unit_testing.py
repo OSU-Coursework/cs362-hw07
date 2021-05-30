@@ -48,6 +48,8 @@ class FizzBuzzTests(TestCase):
             fizzbuzz(1)
         with self.assertStdout("Fizz\n"):
             fizzbuzz(3)
+        with self.assertStdout("Buzz\n"):
+            fizzbuzz(5)
 
 
 if __name__ == '__main__':
