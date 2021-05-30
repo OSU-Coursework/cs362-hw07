@@ -85,6 +85,10 @@ class LeapYearTests(TestCase):
         with self.assertRaises(TypeError):
             leapyear(0.254064) 
 
+    def test_positive_values_only(self):
+        with self.assertRaises(ValueError):
+            leapyear(-1)
+
 
 if __name__ == '__main__':
     unittest.main()
