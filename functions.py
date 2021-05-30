@@ -23,6 +23,10 @@ def fizzbuzz(_input):
         print(_input)
 
 def leapyear(_year):
+    # check type
+    if not isinstance(_year, int):
+        raise TypeError
+
     if _year % 4 == 0 and (not _year % 100 == 0 or _year % 400 == 0):
         return True
     return False
