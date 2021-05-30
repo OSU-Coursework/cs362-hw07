@@ -4,4 +4,8 @@
 
 
 def fizzbuzz(_input):
-    print(_input)
+    if _input % 3 == 0:
+        print("Fizz")
+    else:
+        print(_input)
+        
