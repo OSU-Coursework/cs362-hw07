@@ -79,6 +79,11 @@ class LeapYearTests(TestCase):
         self.assertEqual(leapyear(1800), False)
         self.assertEqual(leapyear(2018), False)
 
+    def test_correct_type(self):
+        with self.assertRaises(TypeError):
+            leapyear("Not an integer")
+        with self.assertRaises(TypeError):
+            leapyear(0.254064) 
 
 
 if __name__ == '__main__':
