@@ -46,6 +46,8 @@ class FizzBuzzTests(TestCase):
     def test_correct_values(self):
         with self.assertStdout("1\n"):
             fizzbuzz(1)
+        with self.assertStdout("Fizz\n"):
+            fizzbuzz(3)
 
 
 if __name__ == '__main__':
