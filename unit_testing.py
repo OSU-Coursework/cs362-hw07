@@ -58,6 +58,12 @@ class FizzBuzzTests(TestCase):
             fizzbuzz("Not an integer")
         with self.assertRaises(TypeError):
             fizzbuzz(0.254064)
+    
+    def test_correct_range(self):
+        with self.assertRaises(ValueError):
+            fizzbuzz(0)
+        with self.assertRaises(ValueError):
+            fizzbuzz(101)
 
 
 if __name__ == '__main__':
