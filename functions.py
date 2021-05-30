@@ -8,6 +8,10 @@ def fizzbuzz(_input):
     if not isinstance(_input, int):
         raise TypeError
 
+    # input should be between 1 and 100
+    if _input < 1 or _input > 100:
+        raise ValueError
+
     # print fizzbuzz
     if _input % 3 == 0 and _input % 5 == 0:
         print("FizzBuzz")
