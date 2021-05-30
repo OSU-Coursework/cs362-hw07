@@ -72,6 +72,12 @@ class LeapYearTests(TestCase):
         self.assertEqual(leapyear(4), True)
         self.assertEqual(leapyear(100), False)
         self.assertEqual(leapyear(400), True)
+        self.assertEqual(leapyear(1584), True)
+        self.assertEqual(leapyear(1832), True)
+        self.assertEqual(leapyear(2000), True)
+        self.assertEqual(leapyear(1662), False)
+        self.assertEqual(leapyear(1800), False)
+        self.assertEqual(leapyear(2018), False)
 
 
 
