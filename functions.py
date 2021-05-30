@@ -21,3 +21,11 @@ def fizzbuzz(_input):
         print("Buzz")
     else:
         print(_input)
+
+def leapyear(_year):
+    retVal = False
+
+    if _year % 4 == 0:
+        retVal = True
+        
+    return retVal
