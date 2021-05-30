@@ -69,7 +69,8 @@ class FizzBuzzTests(TestCase):
 class LeapYearTests(TestCase):
 
     def test_correct_values(self):
-        self.assertTrue(leapyear(4), True)
+        self.assertEqual(leapyear(4), True)
+        self.assertEqual(leapyear(100), False)
 
 
 
