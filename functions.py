@@ -4,7 +4,9 @@
 
 
 def fizzbuzz(_input):
-    if _input % 3 == 0:
+    if _input % 3 == 0 and _input % 5 == 0:
+        print("FizzBuzz")
+    elif _input % 3 == 0:
         print("Fizz")
     elif _input % 5 == 0:
         print("Buzz")
