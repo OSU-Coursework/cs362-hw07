@@ -25,7 +25,7 @@ def fizzbuzz(_input):
 def leapyear(_year):
     retVal = False
 
-    if _year % 4 == 0 and not _year % 100 == 0:
+    if _year % 4 == 0 and (not _year % 100 == 0 or _year % 400 == 0):
         retVal = True
 
     return retVal
