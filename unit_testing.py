@@ -6,7 +6,7 @@ import io
 import sys
 import unittest
 
-from functions import fizzbuzz
+from functions import fizzbuzz, leapyear
 
 # subclass unittest.TestCase to add capturing stdout
 # taken from https://stackoverflow.com/a/66317713
@@ -64,6 +64,13 @@ class FizzBuzzTests(TestCase):
             fizzbuzz(0)
         with self.assertRaises(ValueError):
             fizzbuzz(101)
+
+
+class LeapYearTests(TestCase):
+
+    def test_correct_values(self):
+        self.assertTrue(leapyear(4), True)
+
 
 
 if __name__ == '__main__':
