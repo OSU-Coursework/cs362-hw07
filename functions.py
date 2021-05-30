@@ -27,6 +27,11 @@ def leapyear(_year):
     if not isinstance(_year, int):
         raise TypeError
 
+    # input should be positive
+    if _year < 0:
+        raise ValueError
+
+    # check for leap year
     if _year % 4 == 0 and (not _year % 100 == 0 or _year % 400 == 0):
         return True
     return False
