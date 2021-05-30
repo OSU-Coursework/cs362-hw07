@@ -53,6 +53,12 @@ class FizzBuzzTests(TestCase):
         with self.assertStdout("FizzBuzz\n"):
             fizzbuzz(15)
 
+    def test_correct_type(self):
+        with self.assertRaises(TypeError):
+            fizzbuzz("Not an integer")
+        with self.assertRaises(TypeError):
+            fizzbuzz(0.254064)
+
 
 if __name__ == '__main__':
     unittest.main()
